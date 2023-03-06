@@ -128,14 +128,17 @@ CREATE TABLE
         FOREIGN KEY (album_id) REFERENCES album (id)
     );
 
-INSERT INTO
-    songs (song_name, length, album_id)
-VALUES ('"BREAK MY SOUL"', 279, 1), ("VIRGO\'S GROOVE", 369, 1), ("ALIEN SUPERSTAR", 116, 1), ("Don\'t Stop Me Now", 203, 2), ("Under Pressure", 152, 2), ("Como Nossos Pais", 105, 3), (
-        "O Medo de Amar é o Medo de Ser Livre",
-        207,
-        3
-    ), ("Samba em Paris", 267, 4), ("The Bard\'s Song", 244, 5), ("Feeling Good", 100, 6);
-
+INSERT INTO songs (song_name, length, album_id)
+VALUES ('"BREAK MY SOUL"', 279, 1),
+ ("VIRGO\'S GROOVE",369, 1),
+ ("ALIEN SUPERSTAR", 116, 1),
+ ("Don\'t Stop Me Now", 203, 2),
+ ("Under Pressure", 152, 3),
+ ("Como Nossos Pais", 105, 4),
+ ("O Medo de Amar é o Medo de Ser Livre", 207, 5),
+ ("Samba em Paris", 267, 6),
+ ("The Bard\'s Song", 244, 7),
+ ("Feeling Good", 100, 8);
 CREATE TABLE
     play_history (
         user_id INT NOT NULL,
